@@ -6,7 +6,7 @@ public class GreatestCommonDivisor {
         if (first==0) gcd=second;
         if (second==0) gcd=first;
 
-        for (int i=1; i<Math.min(first,second); i++){
+        for (int i=1; i<=Math.min(first,second); i++){
             if (first%i==0 && second%i==0){
                 gcd = i;
             }
